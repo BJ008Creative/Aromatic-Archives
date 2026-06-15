@@ -20,12 +20,15 @@ export function NavigationBar(){
     }
     return(
         <div className="NavigationBar">
-            <h1>Aroma-Archives</h1>
-            <p>An archive full of mouth watering dishes.</p>
-            <button>Home</button>
-            <button onClick={Click}>Upload {count}</button>
-            <Congrats></Congrats>
-            <button>View Uploads</button>
+            <h1 className='Heading'>Aroma-Archives</h1>
+           
+            <div className='Buttons'>
+                <button className="HomeButton">Home</button>
+                <button onClick={Click} className='UploadButton'>Upload {count}</button>
+                <Congrats></Congrats>
+                <button className='ViewButton'>View Uploads</button>
+            </div>
+            
             
             
             

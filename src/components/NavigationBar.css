@@ -1,3 +1,38 @@
 .NavigationBar{
-    background-color: bisque;
+    background-image:url("foodpage.png");
+    width:1536px;;
+    height :210px;
+    padding:5px;
+   
+   border-radius:20px;
+   border-width:5px;
+   border-color:brown;
+   border-style:solid;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.NavigationBar button{
+    background-color: white;
+    width:100px;
+    height:60px;
+    color:black;
+    border-color:black;
+    border-width:2px;
+    border-style:solid;
+    border-radius: 10px;
+}
+.Buttons{
+    display:flex;
+    gap:10px;
+    margin-left:1170px;
+    margin-top:30px;
+    
+}
+.Heading{
+    margin-left:20px;
+    color:rgb(162, 11, 11);
+    text-shadow: 0 0 5px rgb(233, 140, 140) , 0 0 10px white;
+    font-size:60px;
 }

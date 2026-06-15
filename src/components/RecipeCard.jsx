@@ -6,12 +6,18 @@ export function RecipeCard(){
         recipe:"potato",
         
         
+    },{
+        name:"ariyan",
+        recipe:"egg",
     }]
     return(
 
         
-        <>
-            <p>The first recipe is by {recipeCard.name} and the recipe is {recipeCard.potato}</p>
-        </>
+        <div className="RecipeCard">
+            
+             {recipeCard.map((item,index) => (
+                <p key={index}>The recipe is {item.recipe} by {item.name}</p>
+            ))}
+        </div>
     )
 }
