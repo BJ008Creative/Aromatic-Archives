@@ -1,5 +1,6 @@
 import './NavigationBar.css'
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 
 
 
@@ -24,7 +25,7 @@ export function NavigationBar(){
            
             <div className='Buttons'>
                 <button className="HomeButton">Home</button>
-                <button onClick={Click} className='UploadButton'>Upload {count}</button>
+                <Link to="/upload"><button onClick={Click} className='UploadButton'>Upload {count}</button></Link>
                 <Congrats></Congrats>
                 <button className='ViewButton'>View Uploads</button>
             </div>
