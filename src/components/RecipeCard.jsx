@@ -1,23 +1,17 @@
-import './RecipeCard.css'
-export function RecipeCard(){
+import "./RecipeCard.css";
 
-    const recipeCard=[{
-        name:"Baishali",
-        recipe:"potato",
-        
-        
-    },{
-        name:"ariyan",
-        recipe:"egg",
-    }]
-    return(
+export function RecipeCard({recipes} ) {
+    console.log(recipes);
+  return (
+    <div className="RecipeCard">
 
-        
-        <div className="RecipeCard">
-            
-             {recipeCard.map((item,index) => (
-                <div key={index}>The recipe is {item.recipe} by {item.name}</div>
-            ))}
+      {recipes.map((item, index) => (
+        <div key={index}>
+          <h3>{item.recipe}</h3>
+          <p>By {item.name}</p>
         </div>
-    )
+      ))}
+
+    </div>
+  );
 }
