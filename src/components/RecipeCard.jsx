@@ -1,4 +1,4 @@
-
+import './RecipeCard.css'
 export function RecipeCard(){
 
     const recipeCard=[{
@@ -16,7 +16,7 @@ export function RecipeCard(){
         <div className="RecipeCard">
             
              {recipeCard.map((item,index) => (
-                <p key={index}>The recipe is {item.recipe} by {item.name}</p>
+                <div key={index}>The recipe is {item.recipe} by {item.name}</div>
             ))}
         </div>
     )
