@@ -3,10 +3,11 @@ import { useState } from "react";
 
 import { HomePage } from "./pages/HomePage";
 import { UploadPage } from "./pages/UploadPage";
+import './App.css'
 
 function App() {
 
-  const [recipes] = useState([
+  const [recipes , setRecipes] = useState([
     {
       name: "Baishali",
       recipe: "Potato Curry"
@@ -28,7 +29,7 @@ function App() {
 
         <Route
           path="/upload"
-          element={<UploadPage />}
+          element={<UploadPage recipes={recipes} setRecipes={setRecipes} />}
         />
 
       </Routes>

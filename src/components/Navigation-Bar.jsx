@@ -13,7 +13,7 @@ export function NavigationBar(){
             <h1 className='Heading'>Aroma-Archives</h1>
            
             <div className='Buttons'>
-                <button className="HomeButton">Home</button>
+                <Link to="/"><button className="HomeButton">Home</button></Link>
                 <Link to="/upload"><button  className='UploadButton'>Upload</button></Link>
                
                 <button className='ViewButton'>View Uploads</button>

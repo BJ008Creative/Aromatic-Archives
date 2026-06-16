@@ -1,4 +1,4 @@
-export function UploadSection(){
+export function UploadSection({recipes}){
     return(
         <div className="UploadSection">
             <h1>Upload Recipe</h1>

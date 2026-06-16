@@ -1,11 +1,11 @@
 import { NavigationBar } from "../components/Navigation-Bar";
 import { UploadSection } from "../components/UploadSection";
 
-export function UploadPage(){
+export function UploadPage({recipes , setRecipes}){
     return(
          <>
             <NavigationBar></NavigationBar>
-            <UploadSection></UploadSection>
+            <UploadSection recipes={recipes} ></UploadSection>
         </> 
     )
 }
